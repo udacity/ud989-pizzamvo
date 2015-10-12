@@ -33,7 +33,7 @@ $(function() {
         init: function() {
             view.init();
         }
-    }
+    };
 
 
     var view = {
@@ -59,10 +59,10 @@ $(function() {
 
         render: function() {
             // Cache vars for use in forEach() callback (performance)
-            var $pizzaList = this.$pizzaList,
-                pizzaTemplate = this.pizzaTemplate;
+            var $pizzaList = this.$pizzaList;
+            var pizzaTemplate = this.pizzaTemplate;
 
-            // Clear and render
+            // Clear and render"
             $pizzaList.html('');
             octopus.getVisiblePizzas().forEach(function(pizza) {
                 // Replace template markers with data
@@ -73,4 +73,4 @@ $(function() {
     };
 
     octopus.init();
-}());
+});
