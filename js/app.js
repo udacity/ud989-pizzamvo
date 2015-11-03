@@ -33,7 +33,7 @@ $(function() {
         init: function() {
             view.init();
         }
-    }
+    };
 
 
     var view = {
